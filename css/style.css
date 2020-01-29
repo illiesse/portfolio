@@ -1,0 +1,568 @@
+* {
+	margin: 0;
+}
+
+/*<--- 1er slide : Home --->*/
+
+#homepage_img {
+	background: url("images/bureau_petit.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+}
+
+.hide_menu {
+	transition: 2s left;
+	left: -300px;
+}
+
+.show_menu {
+	transition: 2s left;
+	left: 0;
+}
+
+#fixed_bar {
+	width: 100vw;
+	height: 3%;
+	background-color: grey;
+	position: absolute;
+	opacity: 0.6;
+	z-index: 1;
+	top: 0;
+	padding: 2%;
+	position: fixed;
+}
+
+#menu {
+	position: absolute;
+	background-color: black;
+	width: 30%;
+	height: 40%;
+	opacity: 0.9;
+	top: 10px;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	line-height: 30px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	position: fixed;
+	z-index: 2;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#elements_homepage {
+	background-color: rgba(14, 13, 13, 0.5);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.fa-bars {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	color: #ffffffcf;
+	background-color: #39343475;
+	padding: 10px;
+	border-radius: 30px;
+	font-size: 13px;
+	position: fixed;
+	z-index: 2;
+}
+
+#introduction {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: white;
+	display: flex;
+}
+
+#hello {
+	font-weight: 800;
+}
+
+#introduction>p {
+	margin-right: 15px;	
+}
+
+.typed_one {
+	font-weight: 300;
+}
+
+.typed_two {
+	font-weight: 600;
+}
+
+#icons {
+	display: flex;
+	margin-top: 20px;
+}
+
+p>i {
+	margin-right: 5px;
+	color: #fffffff2;
+	font-size: 14px;
+	background-color: #39343482;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.fa-facebook-f {
+	font-size: 14px;
+	padding: 10px;
+	width: 15px;
+	text-align: center;
+}
+
+
+/*<--- 2ème slide : About Me --->*/
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	line-height: 38px;
+	padding-top: 6%
+}
+
+h1~p {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color:#808080a6;
+	font-weight: 800;
+	margin-bottom: 2%;
+}
+
+#presentation>img {
+	border-radius: 30px;
+	max-width: 94%;
+	height: auto;
+	margin: 3%;
+}
+
+#skill {
+	margin-left: 22px;
+	margin-right: 22px;
+	font-family: 'Poppins', sans-serif;
+	color:#808080db;
+	font-weight: 500;
+	margin-top: 2%;
+}
+
+#skill>p {
+	margin-bottom: 30px;
+}
+
+#progress_bar {
+	border-radius: 5px;
+	background: #F7F7F7;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.15);
+	margin-bottom: 30px;
+}
+
+#progress_bar_one {
+	border-radius: 5px;
+	background-color: #1C1C1C;
+	width: 0%;
+	color: #F7F7F7;
+	padding-left: 10px;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	max-height: 24px;
+	animation: progress_one 6s ease-in-out 2s 3 forwards;
+}
+
+#progress_bar_one>p:nth-child(2), #progress_bar_two>p:nth-child(2), #progress_bar_three>p:nth-child(2) {
+	padding-right: 10px;
+}
+
+@keyframes progress_one {
+  from {
+	width: 0%;
+    }
+  to {
+    width: 95%;
+    }
+}
+
+#progress_bar_two {
+	border-radius: 5px;
+	background-color: #1C1C1C;
+	width: 0%;
+	color: white;
+	padding-left: 10px;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	max-height: 24px;
+	animation: progress_two 6s ease-in-out 2s 3 forwards;
+}
+
+@keyframes progress_two {
+  from {
+	width: 0%;
+    }
+  to {
+    width: 80%;
+    }
+}
+
+#progress_bar_three {
+	border-radius: 5px;
+	background-color: #1C1C1C;
+	width: 0%;
+	color: white;
+	padding-left: 10px;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	max-height: 24px;
+	animation: progress_three 6s ease-in-out 2s 3 forwards;
+}
+
+@keyframes progress_three {
+  from {
+	width: 0%;
+    }
+  to {
+    width: 90%;
+    }
+}
+
+.button_info {
+	border: 1px solid grey;
+	border-radius: 5px;
+	color: purple;
+	background-color: white;
+	padding: 10px;
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.button_info:hover{
+	color: white;
+	background-color: black;
+}
+
+
+/*<--- 3ème slide : certification --->*/
+
+#certification {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f7f7f7;
+}
+
+.owl-carousel .owl-item img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+.owl-carousel, .owl-carousel .owl-item {
+	position: inherit;
+}
+
+.carousel_element+p {
+	text-align: center;
+}
+
+#carousel_picture {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 4%;
+}
+
+#text_certification {
+	width: 70%;
+	margin-left: 15%;
+	font-weight: 500;
+	color: black;
+	text-decoration: underline;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 4%;
+}
+
+
+/*<--- 4ème slide : portfolio --->*/
+
+#portfolio {
+	display: flex;
+	flex-direction: column;
+	max-width: 100vw;
+}
+
+#portfolio>h1 {
+	padding-bottom: 4%; 
+}
+
+#language { 
+	display: flex;
+	justify-content: center;
+	padding: 0;
+ }
+
+#language>li {
+	list-style: none;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+.container {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.portfolio_image {
+	position: relative;
+	width: 50 vw;
+	height: 50 vh;
+}
+
+.portfolio_image>img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 4%;
+}
+
+.portfolio_image:nth-child(6) {
+	margin-bottom: 6%;
+}
+
+.white_veil {
+	position: absolute;
+	background-color: white;
+	color: black;
+	width: 50%;
+	height: 50%;	
+	top: 1%;
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	opacity: 0.9;
+	text-align: center;
+	justify-content: center;
+	line-height: 2.5;
+}
+
+.detail_veil {
+	visibility: hidden;
+}
+
+.detail_veil>p {
+	font-weight: bold;
+}
+
+.portfolio_image:hover .white_veil {
+	visibility: visible;
+	animation: veil 3s ease-in-out forwards;
+}
+
+@keyframes veil {
+  from {
+	width: 100%;
+	height: 0%;	
+	top: 1%;
+    }
+  to {
+    width: 100%;
+    height: 92%;
+    }
+}
+
+.white_veil:hover .detail_veil {
+	animation: details 15s linear;
+}
+
+@keyframes details {
+  from {
+	visibility: hidden;
+    }
+  to {
+  	visibility: visible;
+   }
+}
+
+.fa-search-plus, .fa-unlink {
+	background-color: black;
+	color: white;
+	border-radius: 30px;
+	padding: 8px;
+	margin: 10px;
+}
+
+
+/*<--- 5ème slide : formulaire --->*/
+
+#contact {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f7f7f7;
+}
+
+#contact_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#contact_form div {
+    margin-bottom: 10px;
+}
+
+#button_contact {
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 0;
+}
+
+#div_button_contact {
+    text-align: center;
+}
+
+input {
+    max-width: 304px;
+    height: 40px;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    padding-left: 4%;
+    margin-bottom: 8%;
+    box-sizing: border-box;
+}
+
+textarea {
+	max-width: 304px;
+	padding-top: 3%;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+
+
+/*<--- footer --->*/
+
+footer p {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer div {
+    text-align: center;
+}
+
+
+@media (min-width: 750px) {
+
+	/*<--- 1er slide : Home --->*/
+
+	#homepage_img {
+		background-image: url(images/bureau.jpg);
+	}
+
+	.fa-bars {
+		display: none !important;
+	}
+
+	#menu {
+		all: unset;
+		width: 98vw;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	a {
+		text-decoration: none;
+		padding-right: 2%;
+		padding-bottom: 2%;
+		padding-top: 2%
+	}
+
+
+	/*<--- 2ème slide : About Me --->*/
+
+	#presentation {
+		display: flex;
+		vertical-align: top;
+	}
+
+	#presentation>img {
+		max-width: 35%;
+	}
+
+	#skill {
+		padding-top: 2%;
+		max-width: 60%;
+	}
+
+
+	/*<--- 2ème slide : portfolio --->*/
+
+	.container {
+		all:unset;
+		padding-top: 3%
+	}
+
+	#portfolio>h1 {
+		padding-bottom: 2%; 
+	}
+	
+	.portfolio_image {
+		all:unset;
+		width: 30%;
+		margin-left: 2.5%;
+		margin-bottom: 1%;
+	}
+}
+
+
+@media (max-width: 400px) {
+
+	#homepage_img {
+		background-image: url(images/bureau_petitpetit.jpg);
+	}
+
+}
